@@ -1,0 +1,13 @@
+<html ng-app="main">  
+	Hello World -> Page
+	<div ng-init="uid = '<%= uid %>' "></div>
+	<div ng-include="'/widget/myShop/'+uid"></div> 
+	<div ng-include=" '/widget/myProduct/'+uid "></div>
+</html>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/js/angular.main.js"></script>
+<script src="/js/service_user.js"></script>
+<script src="/js/c_user.js"></script>  
+<script src="/js/s_shop.js"></script>
+<script src="/js/c_widget.js"></script>

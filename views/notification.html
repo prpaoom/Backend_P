@@ -1,0 +1,32 @@
+
+xxxxxxx 
+<div ng-controller="notification">
+        <ul>
+           <li ng-repeat="n in num">{{n.content}}</li>
+        </ul>
+</div>
+
+<!--
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/js/angular.main.js"></script>
+-->
+<script>
+//app.service('service_notification', ['$http','$q',function ($http,$q) {
+//    var d = $q.defer();
+//    this.getMessageUnRead = function(){
+//        $http.post('/notification/chat',{uid:'56e25471f0d71df75d8b4567'}).then(function success(result){
+//            d.resolve(result.data);
+//        }); 
+//        return d.promise;
+//    }
+//    
+//}]);
+//app.controller('notification', ['$scope','service_notification', function ($scope,notification) {
+//   
+//    notification.getMessageUnRead().then(function success(result){
+//        console.log(result)
+//        $scope.num = result;
+//    });
+//}]);
+
+</script>
