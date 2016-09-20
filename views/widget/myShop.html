@@ -1,0 +1,17 @@
+<div ng-controller="w_myShop">  
+	<div ng-init="uid = '<%= uid %>' "></div>   
+	<h2><i class="icons8-shop-2"></i> ร้านค้าของฉัน</h2>
+	<div ng-repeat="x in myshop" class="shop-box pf_1"> 
+		<div class="shop-box_list">
+			<div class="shop_avx"> 
+				<img ng-src="https://im.bazarn.com/c90x90/{{x.shop_logo}}">
+			</div>
+			<div class="shop_namex">
+				<div class="shopname">
+					<a href="http://bazarn.com/shopactivity/{{x.shop_slug}}">{{x.shop_name}}</a>
+				</div> 
+				<div class="shop-inventory">มีสินค้า {{x.numProduct}} items</div>
+			</div>
+		</div> 
+	</div>
+</div> 

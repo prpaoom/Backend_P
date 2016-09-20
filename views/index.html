@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="main">
+  <head>
+    <meta charset="utf-8">
+    <title>user</title>
+  </head>
+  <body ng-controller="c_user">
+   
+<!--    <span ng-include=""></span>-->
+    <div ng-if="user_profile">
+      Hellow....
+      USER_ID : {{user_profile._id}}</br>
+      NAME :{{user_profile.first_name}} {{$parent.user_profile.last_name}} </br>
+      EMAIL:{{user_profile.email}}</br>
+      <a href="/auth/logout">LOGOUT</a>
+    </div>
+
+  </body> 
+  
+ 
+
+</html>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/js/angular.main.js"></script>
+<script src="/js/service_user.js"></script>
+<script src="/js/c_user.js"></script>

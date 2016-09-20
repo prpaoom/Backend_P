@@ -1,0 +1,38 @@
+<html ng-app="main">
+	<div ng-controller="auth">
+		<hr>
+		<h1>LOGIN</h1>
+		<form action="/auth/login" method="post">
+		    <div>
+		        <label>email:</label>
+		        <input type="text" name="email"/>
+		    </div>
+		    <div>
+		        <label>Password:</label>
+		        <input type="password" name="password"/>
+		    </div>
+		    <div>
+		        <input type="submit" value="Log In"/>
+	
+		    </div>
+		</form>
+		{{user_profile}}  
+
+		{{message}}
+
+
+		<br><br><a href="/auth/register">Register</a><br><br><a href="/auth/forgotPassword">Forgot password</a>
+	</div>
+	 <form action="/auth/upload" method="post" enctype="multipart/form-data">
+        Select image to upload:
+          <input type="file" name="file" id="fileToUpload">
+          <input type="submit" value="Upload Image" name="submit">
+  </form>
+	
+
+</html>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/js/angular.main.js"></script>
+<script src="/js/service_user.js"></script>
+<script src="/js/c_auth.js"></script>
